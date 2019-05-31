@@ -7,18 +7,21 @@
     <title>Problem 3</title>
 </head>
 <body>
-        <form>
+
+        <h1 id="header"></h1>
+        <form >
             Username:<br>
-            <input type="text" name="username" value="">
+            <input type="text" name="username" value="" id="username">
             <br>
             Email:<br>
             <input type="email" name="email" value="">
             <br>
             Password:<br>
-            <input type="password" name="password" value="">
+            <input type="password" name="password" value="" id="password">
             <br><br>
-            <input type="submit" value="Submit">
+            <button onclick="checkInput()">Submit</button>
         </form> 
-    
+
+        <script src="form.js"></script>
 </body>
 </html>
