@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 2</title>
+</head>
+<body onload="createTitle()">  
+    
+<script>
+/*
+2.	Create an HTML page with a large element on the page that says,
+ "Don't hover over me" inside of it. When you hover over the element, 
+ send an alert to the user that says, "Hey, I told you not to hover over me!
+*/
+    function createTitle(){
+        let h1 = document.createElement("h1");
+        h1.innerText = "Don't hover over me";
+        
+        document.body.appendChild(h1);
+
+        h1.addEventListener("mouseover", ()=>{
+            h1.innerText = "Hey, I told you not to hover over me!";
+        })
+
+        h1.addEventListener("mouseleave", ()=>{
+            h1.innerText = "Don't hover over me";
+        })
+    };  
+</script>
+</body>
+</html>
