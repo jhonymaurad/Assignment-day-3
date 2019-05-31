@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 1</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row">
+            <button id="1" onclick="changeTextBt1()">Button 1</button>
+            <h2 id="message"></h2>
+            <button id="2" onclick="changeTextBt2()">Button 2</button>
+    </div>
+<script>
+/*
+1.Create an HTML page with two buttons that argue with each other. 
+When one button is clicked, the text "I'm right" should be placed next to it. 
+When the other button is clicked, the text is replaced with, "No, I'm right!"
+*/
+    let changeTextBt1 = () => {
+        document.getElementById("message").innerText = "I'm right";
+    }
+
+    let changeTextBt2 = () => {
+        document.getElementById("message").innerText = "No, I'm right!";
+    }
+
+</script>
+    
+</body>
+</html>
