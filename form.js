@@ -4,20 +4,17 @@
 // c.	Your page should also include an <h1> tag. If the information in the form is correct, 
 // have JavaScript change the text in the <h1>.HTML page. It should include inputs for a username, email,
 //  and password. Also a submit button.
-let password = document.getElementById("password").value;
-let username = document.getElementById("username").value;
 
-let checkPassword = (password) => {
-    if(password == "1"){
-        return true;
+let checkPassword = () => 
+{
+    event.preventDefault();
+
+    let password = document.getElementById("password").value;
+    let username = document.getElementById("username").value;
+    if(password == '1'){
+        document.getElementById("header").innerHTML = username;
     }
-    else return false;
-}
-
-let checkInput = () => {
-    if(!checkPassword(password)) alert("password incorrect");
-
-    if(checkPassword(password)){
-        document.getElementById("header").innerText = username;
+    else{
+        alert("password incorrect");
     }
 }
