@@ -40,8 +40,9 @@ label,input{
 /* Navbar */
 .nav-container {
     display: flex;
-    justify-content: center;
-    background: #8a2be2;
+    justify-content: space-evenly;
+    background: grey;
+    color: white;
     height: 50px;
     width: 100%;
     position: sticky;
