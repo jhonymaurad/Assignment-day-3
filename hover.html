@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="main.css">
     <title>Problem 2</title>
 </head>
-<body onload="createTitle()">  
+<body onload="createTitle()" id="hover-body">  
     
 <script>
 /*
@@ -22,6 +23,7 @@
 
         h1.addEventListener("mouseover", ()=>{
             h1.innerText = "Hey, I told you not to hover over me!";
+            alert("Hey, I told you not to hover over me!");
         })
 
         h1.addEventListener("mouseleave", ()=>{

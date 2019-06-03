@@ -11,7 +11,8 @@ let checkPassword = () =>
 
     let password = document.getElementById("password").value;
     let username = document.getElementById("username").value;
-    if(password == '1'){
+    
+    if(password == '12345678'){
         document.getElementById("header").innerHTML = username;
     }
     else{

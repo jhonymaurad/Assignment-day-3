@@ -1,0 +1,38 @@
+label,input{
+    display:block;
+} 
+#hover-body{
+    background-color: beige;
+    color: rebeccapurple;
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+}
+#argue-body{
+    background-image: linear-gradient(to right,blue, yellow);
+}
+#argue-body button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+#argue-body h2{
+    color: aliceblue;
+}
+#form-body{
+    padding: 50px;
+    background-color: bisque;
+}
+#sphere-body{
+    padding: 30px;
+    background-color: aquamarine;
+}
